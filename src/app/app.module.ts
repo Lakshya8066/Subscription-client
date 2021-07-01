@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
+import { SearchBarComponent } from './subscription/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SubscriptionComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
