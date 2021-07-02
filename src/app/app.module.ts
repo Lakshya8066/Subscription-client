@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
 import { SearchBarComponent } from './subscription/search-bar/search-bar.component';
+import { CardComponent } from './subscription/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SubscriptionComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
