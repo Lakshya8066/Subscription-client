@@ -14,3 +14,6 @@ img{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+app-card{
+    border-radius: 20px;
+}

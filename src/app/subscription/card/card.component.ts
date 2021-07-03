@@ -14,6 +14,10 @@ export class CardComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    if(this.data.description.length>50){
+      this.data.description = this.data.description.substring(0,50);
+      this.data.description += "..."
+    }
   }
 
 }

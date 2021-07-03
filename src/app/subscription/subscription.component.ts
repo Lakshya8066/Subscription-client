@@ -9,7 +9,7 @@ import { CardData } from './card/carddata.model';
 export class SubscriptionComponent implements OnInit {
 
   cardDataMain:CardData[]=[
-    new CardData("hello1 service","qwsssssssssssssssssssssssssssssssssssser","weqw","dwdqw","dqwd"),
+    new CardData("hello1 service","qwssssssssssfewwwwwwwwwwffffffffffffffffffffffffffffffffffffffffffffffffffffpppppppppppppppppooooooooooooooooooffffffffffffffffffffffffffffffnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnsssssssssssssssssssssssssser","weqw","dwdqw","dqwd"),
     new CardData("hello2 service","qwer","weqw","dwdqw","dqwd"),
     new CardData("hello3 service","qwer","weqw","dwdqw","dqwd"),
     new CardData("hello4 service","qwer","weqw","dwdqw","dqwd"),
@@ -27,15 +27,15 @@ export class SubscriptionComponent implements OnInit {
   constructor() { 
     this.cardData=this.cardDataMain;
   }
-  
 
   onsearch(searcheddata:any){
       
       // console.log(this.cardDataMain[1].serviceName);
-      var n=this.cardDataMain.length;
+      var n=this.cardDataMain.length,sl=searcheddata.serviceName.length;
       this.cardData=[];
-      for (let i = 0; i < n; i++) {
-          if(this.cardDataMain[i].serviceName===searcheddata.serviceName){this.cardData.push(this.cardDataMain[i]);}
+
+      for (let i = 0; i < n; i++) {        
+        if(this.cardDataMain[i].serviceName.substring(0,sl)===searcheddata.serviceName){this.cardData.push(this.cardDataMain[i]);}
       }
   }
 
