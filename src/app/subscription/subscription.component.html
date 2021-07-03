@@ -12,7 +12,7 @@
 
   <div class="row">
       <div class="col-1"></div>
-      <div class="col-10"><app-search-bar></app-search-bar></div>
+      <div class="col-10"><app-search-bar (emitData)="onsearch($event)"></app-search-bar></div>
       <div class="col-1"></div>
   </div>
   <br><br><br>
@@ -20,6 +20,9 @@
     <div class="row row-cols-3" >
       <div id="padd" class="col" *ngFor="let cd of cardData"><app-card  [data]="cd" ></app-card></div>
     </div>
+    <!-- <div class="row row-cols-3" >
+      <div id="padd" class="col" *ngFor="let cd of cardData"><app-card  [data]="cd" ></app-card></div>
+    </div> -->
   </div>
 
 
