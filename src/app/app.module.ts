@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
 import { SearchBarComponent } from './subscription/search-bar/search-bar.component';
 import { CardComponent } from './subscription/card/card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CardComponent } from './subscription/card/card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
